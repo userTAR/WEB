@@ -1,0 +1,42 @@
+/* Área header */
+header{
+    display: flex;
+    width: 100%;
+    /* border-bottom: 1.4px solid cornflowerblue; */
+}
+header img{
+    width: auto;
+    height: 130px;
+    justify-content: left;
+    
+}
+header nav{
+    width: 86%;
+    border-bottom: 1.4px solid black;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}    
+ul li{
+    padding: 0% 10% 0% 10%;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    transition: 0.4s;
+}
+button:hover{
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.6);
+    color: whitesmoke;
+    transition: 0.4s;
+}

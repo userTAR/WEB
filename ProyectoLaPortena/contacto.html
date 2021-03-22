@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <title>La Porteña-CONTACTO</title>
+        <link rel="stylesheet" href="contacto.css">
+    </head>
+    <body>
+        <header>
+            <img src="imagenes/LOGO cuadrado.jpg" alt="logo La Porteña">
+            <nav>
+                <ul>    
+                    <li id="productos"><a href="catalogo.html" title="link a productos" target="_self"><button>PRODUCTOS</button></a></li>
+                    <li id="quienesSomos"><a href="quienesSomos.html" title="link a quienes somos" target="_self"><button>QUIENES SOMOS</button></a></li>
+                    <li id="home"><a href="index.html" title="link a contacto" target="_self"><button>HOME</button></a></li>
+                </ul>
+            </nav>   
+        </header>
+        <main>
+            <section id="formSection">
+                <p>Si tenes alguna consulta podes realizarla a nuestro mail
+                    llenando el siguiente formulario y nosotros te contactaremos</p>
+                    <div id="formDiv">
+                        <form action="php/enviar.php" method="POST" onsubmit="return validacion()">
+                            <label>Nombre Completo:<input id="nombre" required type="text" name="nombreCompleto" placeholder="Nombre y apellido"></label>
+                            <label>Número de celular:<input id="telefono" type="tel" name="telefono" placeholder="011xxxxxxxx ó 15xxxxxxxx"></label>
+                            <label>Dirección de Email:<input required type="email" name="mailDir" placeholder="mail@host.com"></label>
+                            <label>Mensaje:<textarea required name="mensaje" cols="20" rows="5" placeholder="Ingrese su consulta aquí"></textarea></label>
+                            <button type="submit">enviar</button>
+                        </form>
+                    </div>
+                </section>
+                <section id="igSection">
+                    <p>Nos podes contactar a traves de Instagram haciendo click en la imagen</p>
+                    <a href="https://www.instagram.com/lp_tiendanatural/?hl=es-la"><img src="imagenes/feedIG.JPG" alt="Feed de IG"></a>
+                </section>
+            </main>
+            <script type="text/javascript" src="contacto.js"></script>
+        </body> 
+        </html>

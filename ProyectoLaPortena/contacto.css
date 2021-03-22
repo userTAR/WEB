@@ -1,0 +1,72 @@
+/* Área header */
+header{
+    display: flex;
+    width: 100%;
+    /* border-bottom: 1.4px solid cornflowerblue; */
+}
+header img{
+    width: auto;
+    height: 130px;
+    justify-content: left;
+    
+}
+header nav{
+    width: 86%;
+    border-bottom: 1.4px solid black;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}    
+ul li{
+    padding: 0% 10% 0% 10%;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    transition: 0.4s;
+}
+button:hover{
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.6);
+    color: whitesmoke;
+    transition: 0.4s;
+}
+/* Area main */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1%;
+}
+#formSection input, #formSection textarea{
+    display: block;
+}
+#formSection{
+    width: 50%;
+    border-right: 1px solid black ;
+}
+#formSection label{
+    display:block;
+    padding-top: 15%;
+}
+#formSection button{
+    margin-top: 5%;
+}
+#formDiv{
+    display: flex;
+    justify-content: center;
+}
+#igSection{
+    padding-left: 3%;
+}
+a img{
+    width: 400px;
+}
